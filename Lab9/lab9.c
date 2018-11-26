@@ -44,6 +44,8 @@ int main()
 {
     FILE *f1;
     FILE *f2;
+    f1=fopen("f1.txt","w+");
+    f2=fopen("f2.txt","w+");
     if((f1=fopen("f1.txt","w+"))==NULL || (f2=fopen("f2.txt","w+"))==NULL)
     {
         printf("Error reading file!\n");
